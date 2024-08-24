@@ -11,10 +11,10 @@ const childProcess = spawn('sh', [shellFilePath]);
 const wss=new WebSocket.Server({port},logcb('listen:', port));
 const path = require('path');
 
-// 获取当前执行脚本的目录路径
+// 獲取當前執行脚本的目錄路徑
 const currentDirectoryPath = __dirname;
 
-// 使用 path.basename 获取目录的名称
+// 使用 path.basename 獲取目錄的名稱
 const directoryName = path.basename(currentDirectoryPath);
 
 
